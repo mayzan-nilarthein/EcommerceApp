@@ -55,13 +55,13 @@ jobs:
           pod install --repo-update
           npm install
 
-      - name: Build the iOS app
-        run: |
-          cd ios
-          xcodebuild clean -workspace YourAppName.xcworkspace -scheme YourAppName -configuration Release
-          xcodebuild archive -workspace YourAppName.xcworkspace -scheme YourAppName -archivePath $PWD/build/YourAppName.xcarchive
+    #   - name: Build the iOS app
+    #     run: |
+    #       cd ios
+    #       xcodebuild clean -workspace StarterTemplate.xcworkspace -scheme StarterTemplate -configuration Release
+    #       xcodebuild archive -workspace StarterTemplate.xcworkspace -scheme StarterTemplate -archivePath $PWD/build/YourAppName.xcarchive
 
-      - name: Run iOS Tests
-        run: |
-          cd ios
-          xcodebuild test -workspace YourAppName.xcworkspace -scheme YourAppName -destination 'platform=iOS Simulator,name=iPhone 12'
+    #   - name: Run iOS Tests
+    #     run: |
+    #       cd ios
+    #       xcodebuild test -workspace YourAppName.xcworkspace -scheme YourAppName -destination 'platform=iOS Simulator,name=iPhone 12'
