@@ -4,7 +4,10 @@ declare module 'react-native-config' {
     GOOGLE_API_KEY: string;
     // add more as needed
   }
+  module.exports = {
+  assets: ['../assets/fonts'],  // Add custom assets like fonts
 
+};
   const Config: Config;
   export default Config;
 }
