@@ -5,9 +5,13 @@ declare module 'react-native-config' {
     // add more as needed
   }
   module.exports = {
-  assets: ['../assets/fonts'],  // Add custom assets like fonts
+  assets: ['../assets/fonts'],
 
 };
   const Config: Config;
   export default Config;
+}
+declare module '*.png' {
+  const value: any;
+  export = value;
 }

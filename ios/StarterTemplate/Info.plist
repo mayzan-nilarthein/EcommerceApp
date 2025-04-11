@@ -58,6 +58,13 @@
 		<string>RobotoRegular.ttf</string>
 		<string>RobotoSemiBold.ttf</string>
 		<string>RobotoThin.ttf</string>
+		<string>RobotoCondensedLight.ttf</string>
+		<string>RobotoCondensedMedium.ttf</string>
+		<string>RobotoCondensedRegular.ttf</string>
+		<string>RobotoCondensedThin.ttf</string>
+		<string>RobotoCondensedBold.ttf</string>
+		<string>RobotoCondensedExtraBold.ttf</string>
+		<string>RobotoCondensedSemiBold.ttf</string>
 	</array>
 </dict>
 </plist>
