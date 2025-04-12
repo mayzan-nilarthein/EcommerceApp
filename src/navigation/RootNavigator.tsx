@@ -1,21 +1,26 @@
-import React from 'react'
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { NavigationContainer } from '@react-navigation/native'
-import { RootStackParamList } from './types'
-import Home from '../screens/Home'
-import Splash from '../screens/Auth/Splash'
+import React from 'react';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { RootStackParamList } from './types';
+import Home from '../screens/Home';
+import Splash from '../screens/Auth/Splash';
+import Welcome from '../screens/Auth/Welcome';
 
-const Stack = createNativeStackNavigator<RootStackParamList>()
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const RootNavigator = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Splash" screenOptions={{headerShown:false}}>
-        <Stack.Screen name='Splash' component={Splash} />
+      <Stack.Navigator
+        initialRouteName="Splash"
+        screenOptions={{ headerShown: false }}
+      >
+        <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Welcome" component={Welcome} />
       </Stack.Navigator>
     </NavigationContainer>
-  )
-}
+  );
+};
 
-export default RootNavigator
+export default RootNavigator;

@@ -1,4 +1,4 @@
-import { Dimensions } from "react-native";
+import { Dimensions } from 'react-native';
 
 const sizes = {
   width: Dimensions.get('window').width,
@@ -8,6 +8,11 @@ const sizes = {
   margin: 16,
   smallMargin: 8,
   largeMargin: 24,
+
+  // radius
+  radiusNormal: 10,
+  radiusRounded: 15,
+  radiusFull: 30,
 
   // Font Sizes
   fontSmall: 12,
