@@ -18,10 +18,12 @@ const colors = {
   darkGrey: '#585858',
   darkPurple: '#5a3977',
   orangeYellow: '#ffaa33',
+  disabled: '#e5e5e5',
+  disabledText: '#b0b0b0',
 
   // Background Colors
 
-  cardBackground: '#FFFFFF', // White for cards or sections
+  cardBackground: '#FFFFFF',
 };
 
 export default colors;

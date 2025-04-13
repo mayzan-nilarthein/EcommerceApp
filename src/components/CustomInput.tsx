@@ -5,18 +5,45 @@ import colors from '../theme/colors';
 import { flower_1 } from '../assets/icons/icons';
 interface Props {
   placeholder: string;
+  label: string;
   borderColor: string;
   sticker: string;
+  secureTextEntry: boolean;
+  maxLength: number;
+  keyboardType: string;
+  numOfLine: number;
+  onChange: () => void;
+  onFocus: () => void;
+  onBlur: () => void;
+  onError: () => void;
 }
 const CustomInput: React.FC<Props> = ({
   placeholder,
   borderColor,
   sticker,
+  label,
+  secureTextEntry,
+  maxLength,
+  keyboardType,
+  numOfLine = 1,
+  onChange,
 }) => {
   return (
     <View>
       <View style={{ ...styles.container, borderColor: borderColor }}>
-        <TextInput placeholder={placeholder} />
+        <TextInput
+          placeholder={placeholder}
+          style={styles.inputText}
+          placeholderTextColor={colors.lightGrey}
+          clearButtonMode="always"
+          numberOfLines={numOfLine}
+          keyboardType={keyboardType}
+          maxLength={maxLength}
+          secureTextEntry={secureTextEntry}
+          allowFontScaling={false}
+          multiline={false}
+          onChangeText={onChange}
+        />
       </View>
       <Text
         style={{
@@ -25,7 +52,7 @@ const CustomInput: React.FC<Props> = ({
           textShadowColor: borderColor,
         }}
       >
-        {placeholder}
+        {label}
       </Text>
 
       <Image source={sticker} style={styles.icon} resizeMode="contain" />
@@ -62,6 +89,14 @@ const styles = StyleSheet.create({
     textShadowRadius: 2,
     letterSpacing: 2,
     color: colors.accent,
+    backgroundColor: colors.white,
+  },
+  inputText: {
+    fontFamily: 'RobotoCondensedBold',
+    fontSize: 18,
+    textShadowRadius: 2,
+    letterSpacing: 2,
+    color: colors.darkGrey,
     backgroundColor: colors.white,
   },
 });

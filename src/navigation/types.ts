@@ -4,5 +4,5 @@ export type RootStackParamList = {
   Welcome: undefined;
   Login: undefined;
   Register: undefined;
-  OTPVerification: undefined;
+  OTPVerification: { email: string };
 };

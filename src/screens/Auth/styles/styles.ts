@@ -152,6 +152,13 @@ const styles = StyleSheet.create({
     borderStyle: 'dotted',
     borderColor: colors.orangeYellow,
   },
+  input: {
+    width: sizes.width * 0.05,
+    textAlign: 'center',
+    fontFamily: 'RobotoCondensedBold',
+    fontSize: 18,
+    color: colors.darkGrey,
+  },
   icon: {
     width: 40,
     height: 40,
