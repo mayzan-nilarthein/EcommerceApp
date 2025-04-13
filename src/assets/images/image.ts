@@ -9,7 +9,7 @@ import welcomeText from './welcome_text.png';
 import kiki_radio from './kiki_radio.png';
 import kiki_cake from './kiki_cake_2.png';
 import kiki_bag from './kiki_bag.png';
-
+import kiki_vase from './kiki_vase.png';
 export {
   logo,
   clouds,
@@ -22,4 +22,5 @@ export {
   kiki_radio,
   kiki_cake,
   kiki_bag,
+  kiki_vase,
 };

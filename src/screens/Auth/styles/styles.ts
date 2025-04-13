@@ -11,6 +11,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  standardContainer: {
+    flex: 1,
+    backgroundColor: colors.white,
+  },
   logoBgCircle: {
     width: sizes.width,
     height: sizes.height + totalHeight,
@@ -94,6 +98,65 @@ const styles = StyleSheet.create({
     fontFamily: 'RobotoRegular',
     fontSize: 14,
     color: colors.darkGrey,
+  },
+  infoContainer: {
+    flex: 0.5,
+    width: sizes.width,
+    paddingHorizontal: sizes.width * 0.05,
+    paddingTop: sizes.padding,
+    gap: sizes.height * 0.05,
+    justifyContent: 'flex-start',
+  },
+  header: {
+    flex: 0.3,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  headerLarge: {
+    flex: 0.5,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  headerIconLarge: {
+    width: 150,
+    height: 150,
+    resizeMode: 'contain',
+  },
+  headerIcon: {
+    width: 120,
+    height: 120,
+    resizeMode: 'contain',
+  },
+
+  footer: {
+    flex: 0.3,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+  },
+  // otp verification
+  otpContainer: {
+    flexDirection: 'row',
+    flex: 0.5,
+    paddingHorizontal: sizes.width * 0.05,
+    gap: 10,
+  },
+  otpBox: {
+    height: sizes.height * 0.08,
+    width: sizes.width * 0.13,
+    borderWidth: 3,
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: colors.white,
+    borderStyle: 'dotted',
+    borderColor: colors.orangeYellow,
+  },
+  icon: {
+    width: 40,
+    height: 40,
+    position: 'absolute',
+    top: -20,
   },
 });
 export default styles;

@@ -1,5 +1,7 @@
 import { View, Text } from 'react-native';
 import React, { useEffect } from 'react';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../../navigation/types';
 import CustomStatusBar from '../../components/CustomStatusBar';
 import colors from '../../theme/colors';
 import styles from './styles/styles';
@@ -13,8 +15,14 @@ import Animated, {
 } from 'react-native-reanimated';
 import { kiki_bag, kiki_radio, welcomeText } from '../../assets/images/image';
 import ClaymorphismBox from '../../components/ClaymorphismBox';
+import { useNavigation } from '@react-navigation/native';
 
-export default function Welcome() {
+const Welcome = () => {
+  type NavigationProp = NativeStackNavigationProp<
+    RootStackParamList,
+    'Welcome'
+  >;
+  const navigation = useNavigation<NavigationProp>();
   const welcomeTextOpactity = useSharedValue<number>(0);
   const translateX = useSharedValue<number>(-sizes.width);
   const infoTextOpacity = useSharedValue<number>(0);
@@ -58,6 +66,7 @@ export default function Welcome() {
           width={sizes.width * 0.8}
           sticker={kiki_radio}
           stickerPosition={'right'}
+          onPress={() => navigation.navigate('Login')}
         />
         <ClaymorphismBox
           text="Register"
@@ -65,6 +74,7 @@ export default function Welcome() {
           width={sizes.width * 0.8}
           sticker={kiki_bag}
           stickerPosition={'left'}
+          onPress={() => navigation.navigate('Register')}
         />
       </Animated.View>
 
@@ -77,4 +87,5 @@ export default function Welcome() {
       </Animated.View>
     </View>
   );
-}
+};
+export default Welcome;

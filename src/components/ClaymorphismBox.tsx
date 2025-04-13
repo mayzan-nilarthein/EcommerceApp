@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Pressable } from 'react-native';
 import React from 'react';
 import colors from '../theme/colors';
 import sizes from '../theme/sizes';
@@ -8,6 +8,7 @@ interface Props {
   color: string;
   sticker: string;
   stickerPosition: string;
+  onPress: () => void;
 }
 const ClaymorphismBox: React.FC<Props> = ({
   text,
@@ -15,11 +16,15 @@ const ClaymorphismBox: React.FC<Props> = ({
   color,
   sticker,
   stickerPosition,
+  onPress,
 }) => {
   const right = stickerPosition === 'right' ? -20 : undefined;
   const left = stickerPosition === 'left' ? -20 : undefined;
   return (
-    <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+    <Pressable
+      style={{ justifyContent: 'center', alignItems: 'center' }}
+      onPress={onPress}
+    >
       <View style={[styles.box, { backgroundColor: color }]}>
         <Text style={styles.text}>{text}</Text>
       </View>
@@ -34,7 +39,7 @@ const ClaymorphismBox: React.FC<Props> = ({
         ]}
         resizeMode="contain"
       />
-    </View>
+    </Pressable>
   );
 };
 
