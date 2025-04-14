@@ -69,7 +69,7 @@ export default CustomButton;
 
 const styles = StyleSheet.create({
   container: {
-    height: sizes.height * 0.07,
+    height: sizes.height * 0.06,
     // width: sizes.width * 0.9,
     borderWidth: 3,
     borderRadius: 20,
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   shadowBox: {
-    height: sizes.height * 0.07,
+    height: sizes.height * 0.06,
     // width: sizes.width * 0.9,
 
     borderWidth: 3,
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
   },
   label: {
     fontFamily: 'RobotoCondensedBold',
-    fontSize: 24,
+    fontSize: 18,
     textShadowRadius: 2,
     letterSpacing: 2,
 

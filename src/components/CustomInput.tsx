@@ -1,8 +1,15 @@
 import React from 'react';
-import { View, Text, Image, TextInput, StyleSheet } from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  TextInput,
+  StyleSheet,
+  KeyboardTypeOptions,
+  ImageSourcePropType,
+} from 'react-native';
 import sizes from '../theme/sizes';
 import colors from '../theme/colors';
-import { flower_1 } from '../assets/icons/icons';
 interface Props {
   placeholder: string;
   label: string;
@@ -10,7 +17,7 @@ interface Props {
   sticker: string;
   secureTextEntry: boolean;
   maxLength: number;
-  keyboardType: string;
+  keyboardType: KeyboardTypeOptions;
   numOfLine: number;
   onChange: () => void;
   onFocus: () => void;
@@ -55,7 +62,11 @@ const CustomInput: React.FC<Props> = ({
         {label}
       </Text>
 
-      <Image source={sticker} style={styles.icon} resizeMode="contain" />
+      <Image
+        source={sticker as ImageSourcePropType}
+        style={styles.icon}
+        resizeMode="contain"
+      />
     </View>
   );
 };

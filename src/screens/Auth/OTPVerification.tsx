@@ -1,17 +1,17 @@
 import React, { useState, useRef } from 'react';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { RootStackParamList } from '../navigation/types';
+import { RootStackParamList } from '../../navigation/types';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { TextInput, View, Image } from 'react-native';
-import styles from './Auth/styles/styles';
-import CustomStatusBar from '../components/CustomStatusBar';
-import CustomHeader from '../components/CustomHeader';
-import colors from '../theme/colors';
-import { kiki_vase } from '../assets/images/image';
-import CustomButton from '../components/CustomButton';
-import sizes from '../theme/sizes';
+import styles from './styles/styles';
+import CustomStatusBar from '../../components/CustomStatusBar';
+import CustomHeader from '../../components/CustomHeader';
+import colors from '../../theme/colors';
+import { kiki_vase } from '../../assets/images/image';
+import CustomButton from '../../components/CustomButton';
+import sizes from '../../theme/sizes';
 import { useMutation } from '@apollo/client';
-import { VERIFY_OTP } from '../graphql/mutations';
+import { VERIFY_OTP } from '../../graphql/mutations';
 
 const OTPVerification = () => {
   type NavigationProp = NativeStackNavigationProp<RootStackParamList, 'Login'>;

@@ -8,16 +8,16 @@ import CustomStatusBar from '../components/CustomStatusBar';
 import colors from '../theme/colors';
 import styles from './styles';
 
-type Props = NativeStackScreenProps<BottomTabParamList, 'Home'>;
+type Props = NativeStackScreenProps<BottomTabParamList, 'Cart'>;
 
-const Home: React.FC<Props> = () => {
+const Cart: React.FC<Props> = () => {
   const color = useSelector((state: RootState) => state.color.currentColor);
   return (
     <View style={styles.container}>
       <CustomStatusBar color={colors.white} />
-      <Text style={{ color: color }}>Home</Text>
+      <Text style={{ color: color }}>Cart</Text>
     </View>
   );
 };
 
-export default Home;
+export default Cart;

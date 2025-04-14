@@ -9,6 +9,7 @@ const colors = {
   brown: '#A67C52',
   skyblue: '#87CEEB',
   borderGray: '#474c59',
+  avocadoGreen: '#568203',
 
   // Neutral Colors
   white: '#FFFFFF',
