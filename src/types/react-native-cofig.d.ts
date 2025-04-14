@@ -1,15 +1,11 @@
 declare module 'react-native-config' {
-  interface Config {
-    GRAPHQL_ENDPOINT: string | UriFunction | undefined;
+  interface Env {
+    GRAPHQL_ENDPOINT: string;
     HASURA_SECRET: string;
+    // Add more env variables as needed
   }
-  module.exports = {
-    assets: ['../assets/fonts'],
-  };
-  const Config: Config;
+
+  const Config: Env;
+
   export default Config;
-}
-declare module '*.png' {
-  const value: any;
-  export = value;
 }
