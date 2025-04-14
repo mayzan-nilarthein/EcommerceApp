@@ -1,9 +1,9 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home';
-import Products from '../screens/Products';
-import Cart from '../screens/Cart';
-import Profile from '../screens/Profile';
+import Products from '../screens/Products/Products';
+import Cart from '../screens/Cart/Cart';
+import Profile from '../screens/Profile/Profile';
 import CustomTabBar from '../components/CustomTabBar';
 import { BottomTabParamList } from './types';
 

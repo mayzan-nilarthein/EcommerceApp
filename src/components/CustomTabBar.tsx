@@ -18,7 +18,7 @@ import { special_jiji } from '../assets/images/image';
 const CustomTabBar: React.FC<BottomTabBarProps> = ({ state, navigation }) => {
   const color_array = [
     colors.primary,
-    colors.secondary,
+    colors.orangeYellow,
     colors.accent,
     colors.avocadoGreen,
   ];

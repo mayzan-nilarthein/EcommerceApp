@@ -12,6 +12,7 @@ import kiki_bag from './kiki_bag.png';
 import kiki_vase from './kiki_vase.png';
 import kiki_basket from './kiki_basket.png';
 import special_jiji from './special_jiji.png';
+
 export {
   logo,
   clouds,

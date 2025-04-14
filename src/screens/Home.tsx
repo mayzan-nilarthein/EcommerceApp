@@ -1,7 +1,7 @@
 import { Text, View } from 'react-native';
 import React from 'react';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { BottomTabParamList, RootStackParamList } from '../navigation/types';
+import { BottomTabParamList } from '../navigation/types';
 import { useSelector } from 'react-redux';
 import { RootState } from '../store/store';
 import CustomStatusBar from '../components/CustomStatusBar';
