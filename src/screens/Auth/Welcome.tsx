@@ -79,7 +79,7 @@ const Welcome = () => {
       </Animated.View>
 
       <Animated.View style={[styles.footerInfo, infoTextStyle]}>
-        <Text style={styles.infoSmallText}> Versoin: 0.0.1 </Text>
+        <Text style={styles.infoSmallText}> Version: 0.0.1 </Text>
         <Text style={styles.infoSmallText}>
           {' '}
           Developed with 💛 by May Zan Nilar Thein
